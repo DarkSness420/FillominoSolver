@@ -1,0 +1,1034 @@
+(set-option :print-success false)
+(set-logic QF_UFLIA)
+(declare-fun e_0_5 () Int)
+(assert (or (= e_0_5 0) (= e_0_5 1)))
+(declare-fun e_0_1 () Int)
+(assert (or (= e_0_1 0) (= e_0_1 1)))
+(declare-fun e_1_6 () Int)
+(assert (or (= e_1_6 0) (= e_1_6 1)))
+(declare-fun e_1_0 () Int)
+(assert (or (= e_1_0 0) (= e_1_0 1)))
+(declare-fun e_1_2 () Int)
+(assert (or (= e_1_2 0) (= e_1_2 1)))
+(declare-fun e_2_7 () Int)
+(assert (or (= e_2_7 0) (= e_2_7 1)))
+(declare-fun e_2_1 () Int)
+(assert (or (= e_2_1 0) (= e_2_1 1)))
+(declare-fun e_2_3 () Int)
+(assert (or (= e_2_3 0) (= e_2_3 1)))
+(declare-fun e_3_8 () Int)
+(assert (or (= e_3_8 0) (= e_3_8 1)))
+(declare-fun e_3_2 () Int)
+(assert (or (= e_3_2 0) (= e_3_2 1)))
+(declare-fun e_3_4 () Int)
+(assert (or (= e_3_4 0) (= e_3_4 1)))
+(declare-fun e_4_9 () Int)
+(assert (or (= e_4_9 0) (= e_4_9 1)))
+(declare-fun e_4_3 () Int)
+(assert (or (= e_4_3 0) (= e_4_3 1)))
+(declare-fun e_5_0 () Int)
+(assert (or (= e_5_0 0) (= e_5_0 1)))
+(declare-fun e_5_10 () Int)
+(assert (or (= e_5_10 0) (= e_5_10 1)))
+(declare-fun e_5_6 () Int)
+(assert (or (= e_5_6 0) (= e_5_6 1)))
+(declare-fun e_6_1 () Int)
+(assert (or (= e_6_1 0) (= e_6_1 1)))
+(declare-fun e_6_11 () Int)
+(assert (or (= e_6_11 0) (= e_6_11 1)))
+(declare-fun e_6_5 () Int)
+(assert (or (= e_6_5 0) (= e_6_5 1)))
+(declare-fun e_6_7 () Int)
+(assert (or (= e_6_7 0) (= e_6_7 1)))
+(declare-fun e_7_2 () Int)
+(assert (or (= e_7_2 0) (= e_7_2 1)))
+(declare-fun e_7_12 () Int)
+(assert (or (= e_7_12 0) (= e_7_12 1)))
+(declare-fun e_7_6 () Int)
+(assert (or (= e_7_6 0) (= e_7_6 1)))
+(declare-fun e_7_8 () Int)
+(assert (or (= e_7_8 0) (= e_7_8 1)))
+(declare-fun e_8_3 () Int)
+(assert (or (= e_8_3 0) (= e_8_3 1)))
+(declare-fun e_8_13 () Int)
+(assert (or (= e_8_13 0) (= e_8_13 1)))
+(declare-fun e_8_7 () Int)
+(assert (or (= e_8_7 0) (= e_8_7 1)))
+(declare-fun e_8_9 () Int)
+(assert (or (= e_8_9 0) (= e_8_9 1)))
+(declare-fun e_9_4 () Int)
+(assert (or (= e_9_4 0) (= e_9_4 1)))
+(declare-fun e_9_14 () Int)
+(assert (or (= e_9_14 0) (= e_9_14 1)))
+(declare-fun e_9_8 () Int)
+(assert (or (= e_9_8 0) (= e_9_8 1)))
+(declare-fun e_10_5 () Int)
+(assert (or (= e_10_5 0) (= e_10_5 1)))
+(declare-fun e_10_15 () Int)
+(assert (or (= e_10_15 0) (= e_10_15 1)))
+(declare-fun e_10_11 () Int)
+(assert (or (= e_10_11 0) (= e_10_11 1)))
+(declare-fun e_11_6 () Int)
+(assert (or (= e_11_6 0) (= e_11_6 1)))
+(declare-fun e_11_16 () Int)
+(assert (or (= e_11_16 0) (= e_11_16 1)))
+(declare-fun e_11_10 () Int)
+(assert (or (= e_11_10 0) (= e_11_10 1)))
+(declare-fun e_11_12 () Int)
+(assert (or (= e_11_12 0) (= e_11_12 1)))
+(declare-fun e_12_7 () Int)
+(assert (or (= e_12_7 0) (= e_12_7 1)))
+(declare-fun e_12_17 () Int)
+(assert (or (= e_12_17 0) (= e_12_17 1)))
+(declare-fun e_12_11 () Int)
+(assert (or (= e_12_11 0) (= e_12_11 1)))
+(declare-fun e_12_13 () Int)
+(assert (or (= e_12_13 0) (= e_12_13 1)))
+(declare-fun e_13_8 () Int)
+(assert (or (= e_13_8 0) (= e_13_8 1)))
+(declare-fun e_13_18 () Int)
+(assert (or (= e_13_18 0) (= e_13_18 1)))
+(declare-fun e_13_12 () Int)
+(assert (or (= e_13_12 0) (= e_13_12 1)))
+(declare-fun e_13_14 () Int)
+(assert (or (= e_13_14 0) (= e_13_14 1)))
+(declare-fun e_14_9 () Int)
+(assert (or (= e_14_9 0) (= e_14_9 1)))
+(declare-fun e_14_19 () Int)
+(assert (or (= e_14_19 0) (= e_14_19 1)))
+(declare-fun e_14_13 () Int)
+(assert (or (= e_14_13 0) (= e_14_13 1)))
+(declare-fun e_15_10 () Int)
+(assert (or (= e_15_10 0) (= e_15_10 1)))
+(declare-fun e_15_20 () Int)
+(assert (or (= e_15_20 0) (= e_15_20 1)))
+(declare-fun e_15_16 () Int)
+(assert (or (= e_15_16 0) (= e_15_16 1)))
+(declare-fun e_16_11 () Int)
+(assert (or (= e_16_11 0) (= e_16_11 1)))
+(declare-fun e_16_21 () Int)
+(assert (or (= e_16_21 0) (= e_16_21 1)))
+(declare-fun e_16_15 () Int)
+(assert (or (= e_16_15 0) (= e_16_15 1)))
+(declare-fun e_16_17 () Int)
+(assert (or (= e_16_17 0) (= e_16_17 1)))
+(declare-fun e_17_12 () Int)
+(assert (or (= e_17_12 0) (= e_17_12 1)))
+(declare-fun e_17_22 () Int)
+(assert (or (= e_17_22 0) (= e_17_22 1)))
+(declare-fun e_17_16 () Int)
+(assert (or (= e_17_16 0) (= e_17_16 1)))
+(declare-fun e_17_18 () Int)
+(assert (or (= e_17_18 0) (= e_17_18 1)))
+(declare-fun e_18_13 () Int)
+(assert (or (= e_18_13 0) (= e_18_13 1)))
+(declare-fun e_18_23 () Int)
+(assert (or (= e_18_23 0) (= e_18_23 1)))
+(declare-fun e_18_17 () Int)
+(assert (or (= e_18_17 0) (= e_18_17 1)))
+(declare-fun e_18_19 () Int)
+(assert (or (= e_18_19 0) (= e_18_19 1)))
+(declare-fun e_19_14 () Int)
+(assert (or (= e_19_14 0) (= e_19_14 1)))
+(declare-fun e_19_24 () Int)
+(assert (or (= e_19_24 0) (= e_19_24 1)))
+(declare-fun e_19_18 () Int)
+(assert (or (= e_19_18 0) (= e_19_18 1)))
+(declare-fun e_20_15 () Int)
+(assert (or (= e_20_15 0) (= e_20_15 1)))
+(declare-fun e_20_21 () Int)
+(assert (or (= e_20_21 0) (= e_20_21 1)))
+(declare-fun e_21_16 () Int)
+(assert (or (= e_21_16 0) (= e_21_16 1)))
+(declare-fun e_21_20 () Int)
+(assert (or (= e_21_20 0) (= e_21_20 1)))
+(declare-fun e_21_22 () Int)
+(assert (or (= e_21_22 0) (= e_21_22 1)))
+(declare-fun e_22_17 () Int)
+(assert (or (= e_22_17 0) (= e_22_17 1)))
+(declare-fun e_22_21 () Int)
+(assert (or (= e_22_21 0) (= e_22_21 1)))
+(declare-fun e_22_23 () Int)
+(assert (or (= e_22_23 0) (= e_22_23 1)))
+(declare-fun e_23_18 () Int)
+(assert (or (= e_23_18 0) (= e_23_18 1)))
+(declare-fun e_23_22 () Int)
+(assert (or (= e_23_22 0) (= e_23_22 1)))
+(declare-fun e_23_24 () Int)
+(assert (or (= e_23_24 0) (= e_23_24 1)))
+(declare-fun e_24_19 () Int)
+(assert (or (= e_24_19 0) (= e_24_19 1)))
+(declare-fun e_24_23 () Int)
+(assert (or (= e_24_23 0) (= e_24_23 1)))
+(assert (<= (+ e_0_5 e_5_0) 1))
+(assert (<= (+ e_0_1 e_1_0) 1))
+(assert (<= (+ e_1_6 e_6_1) 1))
+(assert (<= (+ e_1_0 e_0_1) 1))
+(assert (<= (+ e_1_2 e_2_1) 1))
+(assert (<= (+ e_2_7 e_7_2) 1))
+(assert (<= (+ e_2_1 e_1_2) 1))
+(assert (<= (+ e_2_3 e_3_2) 1))
+(assert (<= (+ e_3_8 e_8_3) 1))
+(assert (<= (+ e_3_2 e_2_3) 1))
+(assert (<= (+ e_3_4 e_4_3) 1))
+(assert (<= (+ e_4_9 e_9_4) 1))
+(assert (<= (+ e_4_3 e_3_4) 1))
+(assert (<= (+ e_5_0 e_0_5) 1))
+(assert (<= (+ e_5_10 e_10_5) 1))
+(assert (<= (+ e_5_6 e_6_5) 1))
+(assert (<= (+ e_6_1 e_1_6) 1))
+(assert (<= (+ e_6_11 e_11_6) 1))
+(assert (<= (+ e_6_5 e_5_6) 1))
+(assert (<= (+ e_6_7 e_7_6) 1))
+(assert (<= (+ e_7_2 e_2_7) 1))
+(assert (<= (+ e_7_12 e_12_7) 1))
+(assert (<= (+ e_7_6 e_6_7) 1))
+(assert (<= (+ e_7_8 e_8_7) 1))
+(assert (<= (+ e_8_3 e_3_8) 1))
+(assert (<= (+ e_8_13 e_13_8) 1))
+(assert (<= (+ e_8_7 e_7_8) 1))
+(assert (<= (+ e_8_9 e_9_8) 1))
+(assert (<= (+ e_9_4 e_4_9) 1))
+(assert (<= (+ e_9_14 e_14_9) 1))
+(assert (<= (+ e_9_8 e_8_9) 1))
+(assert (<= (+ e_10_5 e_5_10) 1))
+(assert (<= (+ e_10_15 e_15_10) 1))
+(assert (<= (+ e_10_11 e_11_10) 1))
+(assert (<= (+ e_11_6 e_6_11) 1))
+(assert (<= (+ e_11_16 e_16_11) 1))
+(assert (<= (+ e_11_10 e_10_11) 1))
+(assert (<= (+ e_11_12 e_12_11) 1))
+(assert (<= (+ e_12_7 e_7_12) 1))
+(assert (<= (+ e_12_17 e_17_12) 1))
+(assert (<= (+ e_12_11 e_11_12) 1))
+(assert (<= (+ e_12_13 e_13_12) 1))
+(assert (<= (+ e_13_8 e_8_13) 1))
+(assert (<= (+ e_13_18 e_18_13) 1))
+(assert (<= (+ e_13_12 e_12_13) 1))
+(assert (<= (+ e_13_14 e_14_13) 1))
+(assert (<= (+ e_14_9 e_9_14) 1))
+(assert (<= (+ e_14_19 e_19_14) 1))
+(assert (<= (+ e_14_13 e_13_14) 1))
+(assert (<= (+ e_15_10 e_10_15) 1))
+(assert (<= (+ e_15_20 e_20_15) 1))
+(assert (<= (+ e_15_16 e_16_15) 1))
+(assert (<= (+ e_16_11 e_11_16) 1))
+(assert (<= (+ e_16_21 e_21_16) 1))
+(assert (<= (+ e_16_15 e_15_16) 1))
+(assert (<= (+ e_16_17 e_17_16) 1))
+(assert (<= (+ e_17_12 e_12_17) 1))
+(assert (<= (+ e_17_22 e_22_17) 1))
+(assert (<= (+ e_17_16 e_16_17) 1))
+(assert (<= (+ e_17_18 e_18_17) 1))
+(assert (<= (+ e_18_13 e_13_18) 1))
+(assert (<= (+ e_18_23 e_23_18) 1))
+(assert (<= (+ e_18_17 e_17_18) 1))
+(assert (<= (+ e_18_19 e_19_18) 1))
+(assert (<= (+ e_19_14 e_14_19) 1))
+(assert (<= (+ e_19_24 e_24_19) 1))
+(assert (<= (+ e_19_18 e_18_19) 1))
+(assert (<= (+ e_20_15 e_15_20) 1))
+(assert (<= (+ e_20_21 e_21_20) 1))
+(assert (<= (+ e_21_16 e_16_21) 1))
+(assert (<= (+ e_21_20 e_20_21) 1))
+(assert (<= (+ e_21_22 e_22_21) 1))
+(assert (<= (+ e_22_17 e_17_22) 1))
+(assert (<= (+ e_22_21 e_21_22) 1))
+(assert (<= (+ e_22_23 e_23_22) 1))
+(assert (<= (+ e_23_18 e_18_23) 1))
+(assert (<= (+ e_23_22 e_22_23) 1))
+(assert (<= (+ e_23_24 e_24_23) 1))
+(assert (<= (+ e_24_19 e_19_24) 1))
+(assert (<= (+ e_24_23 e_23_24) 1))
+(assert (<= (+
+               e_5_0
+               e_1_0
+) 1))
+(assert (<= (+
+               e_6_1
+               e_0_1
+               e_2_1
+) 1))
+(assert (<= (+
+               e_7_2
+               e_1_2
+               e_3_2
+) 1))
+(assert (<= (+
+               e_8_3
+               e_2_3
+               e_4_3
+) 1))
+(assert (<= (+
+               e_9_4
+               e_3_4
+) 1))
+(assert (<= (+
+               e_0_5
+               e_10_5
+               e_6_5
+) 1))
+(assert (<= (+
+               e_1_6
+               e_11_6
+               e_5_6
+               e_7_6
+) 1))
+(assert (<= (+
+               e_2_7
+               e_12_7
+               e_6_7
+               e_8_7
+) 1))
+(assert (<= (+
+               e_3_8
+               e_13_8
+               e_7_8
+               e_9_8
+) 1))
+(assert (<= (+
+               e_4_9
+               e_14_9
+               e_8_9
+) 1))
+(assert (<= (+
+               e_5_10
+               e_15_10
+               e_11_10
+) 1))
+(assert (<= (+
+               e_6_11
+               e_16_11
+               e_10_11
+               e_12_11
+) 1))
+(assert (<= (+
+               e_7_12
+               e_17_12
+               e_11_12
+               e_13_12
+) 1))
+(assert (<= (+
+               e_8_13
+               e_18_13
+               e_12_13
+               e_14_13
+) 1))
+(assert (<= (+
+               e_9_14
+               e_19_14
+               e_13_14
+) 1))
+(assert (<= (+
+               e_10_15
+               e_20_15
+               e_16_15
+) 1))
+(assert (<= (+
+               e_11_16
+               e_21_16
+               e_15_16
+               e_17_16
+) 1))
+(assert (<= (+
+               e_12_17
+               e_22_17
+               e_16_17
+               e_18_17
+) 1))
+(assert (<= (+
+               e_13_18
+               e_23_18
+               e_17_18
+               e_19_18
+) 1))
+(assert (<= (+
+               e_14_19
+               e_24_19
+               e_18_19
+) 1))
+(assert (<= (+
+               e_15_20
+               e_21_20
+) 1))
+(assert (<= (+
+               e_16_21
+               e_20_21
+               e_22_21
+) 1))
+(assert (<= (+
+               e_17_22
+               e_21_22
+               e_23_22
+) 1))
+(assert (<= (+
+               e_18_23
+               e_22_23
+               e_24_23
+) 1))
+(assert (<= (+
+               e_19_24
+               e_23_24
+) 1))
+(declare-fun n_0 () Int)
+(declare-fun n_1 () Int)
+(declare-fun n_2 () Int)
+(declare-fun n_3 () Int)
+(declare-fun n_4 () Int)
+(declare-fun n_5 () Int)
+(declare-fun n_6 () Int)
+(declare-fun n_7 () Int)
+(declare-fun n_8 () Int)
+(declare-fun n_9 () Int)
+(declare-fun n_10 () Int)
+(declare-fun n_11 () Int)
+(declare-fun n_12 () Int)
+(declare-fun n_13 () Int)
+(declare-fun n_14 () Int)
+(declare-fun n_15 () Int)
+(declare-fun n_16 () Int)
+(declare-fun n_17 () Int)
+(declare-fun n_18 () Int)
+(declare-fun n_19 () Int)
+(declare-fun n_20 () Int)
+(declare-fun n_21 () Int)
+(declare-fun n_22 () Int)
+(declare-fun n_23 () Int)
+(declare-fun n_24 () Int)
+(assert (= n_0 3))
+(assert (= n_4 5))
+(assert (= n_6 3))
+(assert (= n_8 1))
+(assert (= n_10 1))
+(assert (= n_12 3))
+(assert (= n_14 2))
+(assert (= n_16 5))
+(assert (= n_18 3))
+(assert (= n_20 5))
+(assert (= n_22 1))
+(declare-fun s_0 () Int)
+(declare-fun s_1 () Int)
+(declare-fun s_2 () Int)
+(declare-fun s_3 () Int)
+(declare-fun s_4 () Int)
+(declare-fun s_5 () Int)
+(declare-fun s_6 () Int)
+(declare-fun s_7 () Int)
+(declare-fun s_8 () Int)
+(declare-fun s_9 () Int)
+(declare-fun s_10 () Int)
+(declare-fun s_11 () Int)
+(declare-fun s_12 () Int)
+(declare-fun s_13 () Int)
+(declare-fun s_14 () Int)
+(declare-fun s_15 () Int)
+(declare-fun s_16 () Int)
+(declare-fun s_17 () Int)
+(declare-fun s_18 () Int)
+(declare-fun s_19 () Int)
+(declare-fun s_20 () Int)
+(declare-fun s_21 () Int)
+(declare-fun s_22 () Int)
+(declare-fun s_23 () Int)
+(declare-fun s_24 () Int)
+(assert (= s_0 (+ 1
+                   (ite (= e_0_5 1) s_5 0)
+                   (ite (= e_0_1 1) s_1 0)
+)))
+(assert (= s_1 (+ 1
+                   (ite (= e_1_6 1) s_6 0)
+                   (ite (= e_1_0 1) s_0 0)
+                   (ite (= e_1_2 1) s_2 0)
+)))
+(assert (= s_2 (+ 1
+                   (ite (= e_2_7 1) s_7 0)
+                   (ite (= e_2_1 1) s_1 0)
+                   (ite (= e_2_3 1) s_3 0)
+)))
+(assert (= s_3 (+ 1
+                   (ite (= e_3_8 1) s_8 0)
+                   (ite (= e_3_2 1) s_2 0)
+                   (ite (= e_3_4 1) s_4 0)
+)))
+(assert (= s_4 (+ 1
+                   (ite (= e_4_9 1) s_9 0)
+                   (ite (= e_4_3 1) s_3 0)
+)))
+(assert (= s_5 (+ 1
+                   (ite (= e_5_0 1) s_0 0)
+                   (ite (= e_5_10 1) s_10 0)
+                   (ite (= e_5_6 1) s_6 0)
+)))
+(assert (= s_6 (+ 1
+                   (ite (= e_6_1 1) s_1 0)
+                   (ite (= e_6_11 1) s_11 0)
+                   (ite (= e_6_5 1) s_5 0)
+                   (ite (= e_6_7 1) s_7 0)
+)))
+(assert (= s_7 (+ 1
+                   (ite (= e_7_2 1) s_2 0)
+                   (ite (= e_7_12 1) s_12 0)
+                   (ite (= e_7_6 1) s_6 0)
+                   (ite (= e_7_8 1) s_8 0)
+)))
+(assert (= s_8 (+ 1
+                   (ite (= e_8_3 1) s_3 0)
+                   (ite (= e_8_13 1) s_13 0)
+                   (ite (= e_8_7 1) s_7 0)
+                   (ite (= e_8_9 1) s_9 0)
+)))
+(assert (= s_9 (+ 1
+                   (ite (= e_9_4 1) s_4 0)
+                   (ite (= e_9_14 1) s_14 0)
+                   (ite (= e_9_8 1) s_8 0)
+)))
+(assert (= s_10 (+ 1
+                   (ite (= e_10_5 1) s_5 0)
+                   (ite (= e_10_15 1) s_15 0)
+                   (ite (= e_10_11 1) s_11 0)
+)))
+(assert (= s_11 (+ 1
+                   (ite (= e_11_6 1) s_6 0)
+                   (ite (= e_11_16 1) s_16 0)
+                   (ite (= e_11_10 1) s_10 0)
+                   (ite (= e_11_12 1) s_12 0)
+)))
+(assert (= s_12 (+ 1
+                   (ite (= e_12_7 1) s_7 0)
+                   (ite (= e_12_17 1) s_17 0)
+                   (ite (= e_12_11 1) s_11 0)
+                   (ite (= e_12_13 1) s_13 0)
+)))
+(assert (= s_13 (+ 1
+                   (ite (= e_13_8 1) s_8 0)
+                   (ite (= e_13_18 1) s_18 0)
+                   (ite (= e_13_12 1) s_12 0)
+                   (ite (= e_13_14 1) s_14 0)
+)))
+(assert (= s_14 (+ 1
+                   (ite (= e_14_9 1) s_9 0)
+                   (ite (= e_14_19 1) s_19 0)
+                   (ite (= e_14_13 1) s_13 0)
+)))
+(assert (= s_15 (+ 1
+                   (ite (= e_15_10 1) s_10 0)
+                   (ite (= e_15_20 1) s_20 0)
+                   (ite (= e_15_16 1) s_16 0)
+)))
+(assert (= s_16 (+ 1
+                   (ite (= e_16_11 1) s_11 0)
+                   (ite (= e_16_21 1) s_21 0)
+                   (ite (= e_16_15 1) s_15 0)
+                   (ite (= e_16_17 1) s_17 0)
+)))
+(assert (= s_17 (+ 1
+                   (ite (= e_17_12 1) s_12 0)
+                   (ite (= e_17_22 1) s_22 0)
+                   (ite (= e_17_16 1) s_16 0)
+                   (ite (= e_17_18 1) s_18 0)
+)))
+(assert (= s_18 (+ 1
+                   (ite (= e_18_13 1) s_13 0)
+                   (ite (= e_18_23 1) s_23 0)
+                   (ite (= e_18_17 1) s_17 0)
+                   (ite (= e_18_19 1) s_19 0)
+)))
+(assert (= s_19 (+ 1
+                   (ite (= e_19_14 1) s_14 0)
+                   (ite (= e_19_24 1) s_24 0)
+                   (ite (= e_19_18 1) s_18 0)
+)))
+(assert (= s_20 (+ 1
+                   (ite (= e_20_15 1) s_15 0)
+                   (ite (= e_20_21 1) s_21 0)
+)))
+(assert (= s_21 (+ 1
+                   (ite (= e_21_16 1) s_16 0)
+                   (ite (= e_21_20 1) s_20 0)
+                   (ite (= e_21_22 1) s_22 0)
+)))
+(assert (= s_22 (+ 1
+                   (ite (= e_22_17 1) s_17 0)
+                   (ite (= e_22_21 1) s_21 0)
+                   (ite (= e_22_23 1) s_23 0)
+)))
+(assert (= s_23 (+ 1
+                   (ite (= e_23_18 1) s_18 0)
+                   (ite (= e_23_22 1) s_22 0)
+                   (ite (= e_23_24 1) s_24 0)
+)))
+(assert (= s_24 (+ 1
+                   (ite (= e_24_19 1) s_19 0)
+                   (ite (= e_24_23 1) s_23 0)
+)))
+(assert (=> (= (+
+                  e_5_0
+                  e_1_0
+) 0) (= s_0 n_0)))
+(assert (=> (= (+
+                  e_6_1
+                  e_0_1
+                  e_2_1
+) 0) (= s_1 n_1)))
+(assert (=> (= (+
+                  e_7_2
+                  e_1_2
+                  e_3_2
+) 0) (= s_2 n_2)))
+(assert (=> (= (+
+                  e_8_3
+                  e_2_3
+                  e_4_3
+) 0) (= s_3 n_3)))
+(assert (=> (= (+
+                  e_9_4
+                  e_3_4
+) 0) (= s_4 n_4)))
+(assert (=> (= (+
+                  e_0_5
+                  e_10_5
+                  e_6_5
+) 0) (= s_5 n_5)))
+(assert (=> (= (+
+                  e_1_6
+                  e_11_6
+                  e_5_6
+                  e_7_6
+) 0) (= s_6 n_6)))
+(assert (=> (= (+
+                  e_2_7
+                  e_12_7
+                  e_6_7
+                  e_8_7
+) 0) (= s_7 n_7)))
+(assert (=> (= (+
+                  e_3_8
+                  e_13_8
+                  e_7_8
+                  e_9_8
+) 0) (= s_8 n_8)))
+(assert (=> (= (+
+                  e_4_9
+                  e_14_9
+                  e_8_9
+) 0) (= s_9 n_9)))
+(assert (=> (= (+
+                  e_5_10
+                  e_15_10
+                  e_11_10
+) 0) (= s_10 n_10)))
+(assert (=> (= (+
+                  e_6_11
+                  e_16_11
+                  e_10_11
+                  e_12_11
+) 0) (= s_11 n_11)))
+(assert (=> (= (+
+                  e_7_12
+                  e_17_12
+                  e_11_12
+                  e_13_12
+) 0) (= s_12 n_12)))
+(assert (=> (= (+
+                  e_8_13
+                  e_18_13
+                  e_12_13
+                  e_14_13
+) 0) (= s_13 n_13)))
+(assert (=> (= (+
+                  e_9_14
+                  e_19_14
+                  e_13_14
+) 0) (= s_14 n_14)))
+(assert (=> (= (+
+                  e_10_15
+                  e_20_15
+                  e_16_15
+) 0) (= s_15 n_15)))
+(assert (=> (= (+
+                  e_11_16
+                  e_21_16
+                  e_15_16
+                  e_17_16
+) 0) (= s_16 n_16)))
+(assert (=> (= (+
+                  e_12_17
+                  e_22_17
+                  e_16_17
+                  e_18_17
+) 0) (= s_17 n_17)))
+(assert (=> (= (+
+                  e_13_18
+                  e_23_18
+                  e_17_18
+                  e_19_18
+) 0) (= s_18 n_18)))
+(assert (=> (= (+
+                  e_14_19
+                  e_24_19
+                  e_18_19
+) 0) (= s_19 n_19)))
+(assert (=> (= (+
+                  e_15_20
+                  e_21_20
+) 0) (= s_20 n_20)))
+(assert (=> (= (+
+                  e_16_21
+                  e_20_21
+                  e_22_21
+) 0) (= s_21 n_21)))
+(assert (=> (= (+
+                  e_17_22
+                  e_21_22
+                  e_23_22
+) 0) (= s_22 n_22)))
+(assert (=> (= (+
+                  e_18_23
+                  e_22_23
+                  e_24_23
+) 0) (= s_23 n_23)))
+(assert (=> (= (+
+                  e_19_24
+                  e_23_24
+) 0) (= s_24 n_24)))
+(assert (=> (= e_0_5 1) (= n_0 n_5)))
+(assert (=> (= e_0_1 1) (= n_0 n_1)))
+(assert (=> (= e_1_6 1) (= n_1 n_6)))
+(assert (=> (= e_1_0 1) (= n_1 n_0)))
+(assert (=> (= e_1_2 1) (= n_1 n_2)))
+(assert (=> (= e_2_7 1) (= n_2 n_7)))
+(assert (=> (= e_2_1 1) (= n_2 n_1)))
+(assert (=> (= e_2_3 1) (= n_2 n_3)))
+(assert (=> (= e_3_8 1) (= n_3 n_8)))
+(assert (=> (= e_3_2 1) (= n_3 n_2)))
+(assert (=> (= e_3_4 1) (= n_3 n_4)))
+(assert (=> (= e_4_9 1) (= n_4 n_9)))
+(assert (=> (= e_4_3 1) (= n_4 n_3)))
+(assert (=> (= e_5_0 1) (= n_5 n_0)))
+(assert (=> (= e_5_10 1) (= n_5 n_10)))
+(assert (=> (= e_5_6 1) (= n_5 n_6)))
+(assert (=> (= e_6_1 1) (= n_6 n_1)))
+(assert (=> (= e_6_11 1) (= n_6 n_11)))
+(assert (=> (= e_6_5 1) (= n_6 n_5)))
+(assert (=> (= e_6_7 1) (= n_6 n_7)))
+(assert (=> (= e_7_2 1) (= n_7 n_2)))
+(assert (=> (= e_7_12 1) (= n_7 n_12)))
+(assert (=> (= e_7_6 1) (= n_7 n_6)))
+(assert (=> (= e_7_8 1) (= n_7 n_8)))
+(assert (=> (= e_8_3 1) (= n_8 n_3)))
+(assert (=> (= e_8_13 1) (= n_8 n_13)))
+(assert (=> (= e_8_7 1) (= n_8 n_7)))
+(assert (=> (= e_8_9 1) (= n_8 n_9)))
+(assert (=> (= e_9_4 1) (= n_9 n_4)))
+(assert (=> (= e_9_14 1) (= n_9 n_14)))
+(assert (=> (= e_9_8 1) (= n_9 n_8)))
+(assert (=> (= e_10_5 1) (= n_10 n_5)))
+(assert (=> (= e_10_15 1) (= n_10 n_15)))
+(assert (=> (= e_10_11 1) (= n_10 n_11)))
+(assert (=> (= e_11_6 1) (= n_11 n_6)))
+(assert (=> (= e_11_16 1) (= n_11 n_16)))
+(assert (=> (= e_11_10 1) (= n_11 n_10)))
+(assert (=> (= e_11_12 1) (= n_11 n_12)))
+(assert (=> (= e_12_7 1) (= n_12 n_7)))
+(assert (=> (= e_12_17 1) (= n_12 n_17)))
+(assert (=> (= e_12_11 1) (= n_12 n_11)))
+(assert (=> (= e_12_13 1) (= n_12 n_13)))
+(assert (=> (= e_13_8 1) (= n_13 n_8)))
+(assert (=> (= e_13_18 1) (= n_13 n_18)))
+(assert (=> (= e_13_12 1) (= n_13 n_12)))
+(assert (=> (= e_13_14 1) (= n_13 n_14)))
+(assert (=> (= e_14_9 1) (= n_14 n_9)))
+(assert (=> (= e_14_19 1) (= n_14 n_19)))
+(assert (=> (= e_14_13 1) (= n_14 n_13)))
+(assert (=> (= e_15_10 1) (= n_15 n_10)))
+(assert (=> (= e_15_20 1) (= n_15 n_20)))
+(assert (=> (= e_15_16 1) (= n_15 n_16)))
+(assert (=> (= e_16_11 1) (= n_16 n_11)))
+(assert (=> (= e_16_21 1) (= n_16 n_21)))
+(assert (=> (= e_16_15 1) (= n_16 n_15)))
+(assert (=> (= e_16_17 1) (= n_16 n_17)))
+(assert (=> (= e_17_12 1) (= n_17 n_12)))
+(assert (=> (= e_17_22 1) (= n_17 n_22)))
+(assert (=> (= e_17_16 1) (= n_17 n_16)))
+(assert (=> (= e_17_18 1) (= n_17 n_18)))
+(assert (=> (= e_18_13 1) (= n_18 n_13)))
+(assert (=> (= e_18_23 1) (= n_18 n_23)))
+(assert (=> (= e_18_17 1) (= n_18 n_17)))
+(assert (=> (= e_18_19 1) (= n_18 n_19)))
+(assert (=> (= e_19_14 1) (= n_19 n_14)))
+(assert (=> (= e_19_24 1) (= n_19 n_24)))
+(assert (=> (= e_19_18 1) (= n_19 n_18)))
+(assert (=> (= e_20_15 1) (= n_20 n_15)))
+(assert (=> (= e_20_21 1) (= n_20 n_21)))
+(assert (=> (= e_21_16 1) (= n_21 n_16)))
+(assert (=> (= e_21_20 1) (= n_21 n_20)))
+(assert (=> (= e_21_22 1) (= n_21 n_22)))
+(assert (=> (= e_22_17 1) (= n_22 n_17)))
+(assert (=> (= e_22_21 1) (= n_22 n_21)))
+(assert (=> (= e_22_23 1) (= n_22 n_23)))
+(assert (=> (= e_23_18 1) (= n_23 n_18)))
+(assert (=> (= e_23_22 1) (= n_23 n_22)))
+(assert (=> (= e_23_24 1) (= n_23 n_24)))
+(assert (=> (= e_24_19 1) (= n_24 n_19)))
+(assert (=> (= e_24_23 1) (= n_24 n_23)))
+(declare-fun r_0 () Int)
+(declare-fun r_1 () Int)
+(declare-fun r_2 () Int)
+(declare-fun r_3 () Int)
+(declare-fun r_4 () Int)
+(declare-fun r_5 () Int)
+(declare-fun r_6 () Int)
+(declare-fun r_7 () Int)
+(declare-fun r_8 () Int)
+(declare-fun r_9 () Int)
+(declare-fun r_10 () Int)
+(declare-fun r_11 () Int)
+(declare-fun r_12 () Int)
+(declare-fun r_13 () Int)
+(declare-fun r_14 () Int)
+(declare-fun r_15 () Int)
+(declare-fun r_16 () Int)
+(declare-fun r_17 () Int)
+(declare-fun r_18 () Int)
+(declare-fun r_19 () Int)
+(declare-fun r_20 () Int)
+(declare-fun r_21 () Int)
+(declare-fun r_22 () Int)
+(declare-fun r_23 () Int)
+(declare-fun r_24 () Int)
+(assert (=> (= (+
+                  e_5_0
+                  e_1_0
+) 0) (= r_0 0)))
+(assert (=> (= (+
+                  e_6_1
+                  e_0_1
+                  e_2_1
+) 0) (= r_1 1)))
+(assert (=> (= (+
+                  e_7_2
+                  e_1_2
+                  e_3_2
+) 0) (= r_2 2)))
+(assert (=> (= (+
+                  e_8_3
+                  e_2_3
+                  e_4_3
+) 0) (= r_3 3)))
+(assert (=> (= (+
+                  e_9_4
+                  e_3_4
+) 0) (= r_4 4)))
+(assert (=> (= (+
+                  e_0_5
+                  e_10_5
+                  e_6_5
+) 0) (= r_5 5)))
+(assert (=> (= (+
+                  e_1_6
+                  e_11_6
+                  e_5_6
+                  e_7_6
+) 0) (= r_6 6)))
+(assert (=> (= (+
+                  e_2_7
+                  e_12_7
+                  e_6_7
+                  e_8_7
+) 0) (= r_7 7)))
+(assert (=> (= (+
+                  e_3_8
+                  e_13_8
+                  e_7_8
+                  e_9_8
+) 0) (= r_8 8)))
+(assert (=> (= (+
+                  e_4_9
+                  e_14_9
+                  e_8_9
+) 0) (= r_9 9)))
+(assert (=> (= (+
+                  e_5_10
+                  e_15_10
+                  e_11_10
+) 0) (= r_10 10)))
+(assert (=> (= (+
+                  e_6_11
+                  e_16_11
+                  e_10_11
+                  e_12_11
+) 0) (= r_11 11)))
+(assert (=> (= (+
+                  e_7_12
+                  e_17_12
+                  e_11_12
+                  e_13_12
+) 0) (= r_12 12)))
+(assert (=> (= (+
+                  e_8_13
+                  e_18_13
+                  e_12_13
+                  e_14_13
+) 0) (= r_13 13)))
+(assert (=> (= (+
+                  e_9_14
+                  e_19_14
+                  e_13_14
+) 0) (= r_14 14)))
+(assert (=> (= (+
+                  e_10_15
+                  e_20_15
+                  e_16_15
+) 0) (= r_15 15)))
+(assert (=> (= (+
+                  e_11_16
+                  e_21_16
+                  e_15_16
+                  e_17_16
+) 0) (= r_16 16)))
+(assert (=> (= (+
+                  e_12_17
+                  e_22_17
+                  e_16_17
+                  e_18_17
+) 0) (= r_17 17)))
+(assert (=> (= (+
+                  e_13_18
+                  e_23_18
+                  e_17_18
+                  e_19_18
+) 0) (= r_18 18)))
+(assert (=> (= (+
+                  e_14_19
+                  e_24_19
+                  e_18_19
+) 0) (= r_19 19)))
+(assert (=> (= (+
+                  e_15_20
+                  e_21_20
+) 0) (= r_20 20)))
+(assert (=> (= (+
+                  e_16_21
+                  e_20_21
+                  e_22_21
+) 0) (= r_21 21)))
+(assert (=> (= (+
+                  e_17_22
+                  e_21_22
+                  e_23_22
+) 0) (= r_22 22)))
+(assert (=> (= (+
+                  e_18_23
+                  e_22_23
+                  e_24_23
+) 0) (= r_23 23)))
+(assert (=> (= (+
+                  e_19_24
+                  e_23_24
+) 0) (= r_24 24)))
+(assert (=> (= n_0 n_5) (= r_0 r_5)))
+(assert (=> (= n_0 n_1) (= r_0 r_1)))
+(assert (=> (= n_1 n_6) (= r_1 r_6)))
+(assert (=> (= n_1 n_0) (= r_1 r_0)))
+(assert (=> (= n_1 n_2) (= r_1 r_2)))
+(assert (=> (= n_2 n_7) (= r_2 r_7)))
+(assert (=> (= n_2 n_1) (= r_2 r_1)))
+(assert (=> (= n_2 n_3) (= r_2 r_3)))
+(assert (=> (= n_3 n_8) (= r_3 r_8)))
+(assert (=> (= n_3 n_2) (= r_3 r_2)))
+(assert (=> (= n_3 n_4) (= r_3 r_4)))
+(assert (=> (= n_4 n_9) (= r_4 r_9)))
+(assert (=> (= n_4 n_3) (= r_4 r_3)))
+(assert (=> (= n_5 n_0) (= r_5 r_0)))
+(assert (=> (= n_5 n_10) (= r_5 r_10)))
+(assert (=> (= n_5 n_6) (= r_5 r_6)))
+(assert (=> (= n_6 n_1) (= r_6 r_1)))
+(assert (=> (= n_6 n_11) (= r_6 r_11)))
+(assert (=> (= n_6 n_5) (= r_6 r_5)))
+(assert (=> (= n_6 n_7) (= r_6 r_7)))
+(assert (=> (= n_7 n_2) (= r_7 r_2)))
+(assert (=> (= n_7 n_12) (= r_7 r_12)))
+(assert (=> (= n_7 n_6) (= r_7 r_6)))
+(assert (=> (= n_7 n_8) (= r_7 r_8)))
+(assert (=> (= n_8 n_3) (= r_8 r_3)))
+(assert (=> (= n_8 n_13) (= r_8 r_13)))
+(assert (=> (= n_8 n_7) (= r_8 r_7)))
+(assert (=> (= n_8 n_9) (= r_8 r_9)))
+(assert (=> (= n_9 n_4) (= r_9 r_4)))
+(assert (=> (= n_9 n_14) (= r_9 r_14)))
+(assert (=> (= n_9 n_8) (= r_9 r_8)))
+(assert (=> (= n_10 n_5) (= r_10 r_5)))
+(assert (=> (= n_10 n_15) (= r_10 r_15)))
+(assert (=> (= n_10 n_11) (= r_10 r_11)))
+(assert (=> (= n_11 n_6) (= r_11 r_6)))
+(assert (=> (= n_11 n_16) (= r_11 r_16)))
+(assert (=> (= n_11 n_10) (= r_11 r_10)))
+(assert (=> (= n_11 n_12) (= r_11 r_12)))
+(assert (=> (= n_12 n_7) (= r_12 r_7)))
+(assert (=> (= n_12 n_17) (= r_12 r_17)))
+(assert (=> (= n_12 n_11) (= r_12 r_11)))
+(assert (=> (= n_12 n_13) (= r_12 r_13)))
+(assert (=> (= n_13 n_8) (= r_13 r_8)))
+(assert (=> (= n_13 n_18) (= r_13 r_18)))
+(assert (=> (= n_13 n_12) (= r_13 r_12)))
+(assert (=> (= n_13 n_14) (= r_13 r_14)))
+(assert (=> (= n_14 n_9) (= r_14 r_9)))
+(assert (=> (= n_14 n_19) (= r_14 r_19)))
+(assert (=> (= n_14 n_13) (= r_14 r_13)))
+(assert (=> (= n_15 n_10) (= r_15 r_10)))
+(assert (=> (= n_15 n_20) (= r_15 r_20)))
+(assert (=> (= n_15 n_16) (= r_15 r_16)))
+(assert (=> (= n_16 n_11) (= r_16 r_11)))
+(assert (=> (= n_16 n_21) (= r_16 r_21)))
+(assert (=> (= n_16 n_15) (= r_16 r_15)))
+(assert (=> (= n_16 n_17) (= r_16 r_17)))
+(assert (=> (= n_17 n_12) (= r_17 r_12)))
+(assert (=> (= n_17 n_22) (= r_17 r_22)))
+(assert (=> (= n_17 n_16) (= r_17 r_16)))
+(assert (=> (= n_17 n_18) (= r_17 r_18)))
+(assert (=> (= n_18 n_13) (= r_18 r_13)))
+(assert (=> (= n_18 n_23) (= r_18 r_23)))
+(assert (=> (= n_18 n_17) (= r_18 r_17)))
+(assert (=> (= n_18 n_19) (= r_18 r_19)))
+(assert (=> (= n_19 n_14) (= r_19 r_14)))
+(assert (=> (= n_19 n_24) (= r_19 r_24)))
+(assert (=> (= n_19 n_18) (= r_19 r_18)))
+(assert (=> (= n_20 n_15) (= r_20 r_15)))
+(assert (=> (= n_20 n_21) (= r_20 r_21)))
+(assert (=> (= n_21 n_16) (= r_21 r_16)))
+(assert (=> (= n_21 n_20) (= r_21 r_20)))
+(assert (=> (= n_21 n_22) (= r_21 r_22)))
+(assert (=> (= n_22 n_17) (= r_22 r_17)))
+(assert (=> (= n_22 n_21) (= r_22 r_21)))
+(assert (=> (= n_22 n_23) (= r_22 r_23)))
+(assert (=> (= n_23 n_18) (= r_23 r_18)))
+(assert (=> (= n_23 n_22) (= r_23 r_22)))
+(assert (=> (= n_23 n_24) (= r_23 r_24)))
+(assert (=> (= n_24 n_19) (= r_24 r_19)))
+(assert (=> (= n_24 n_23) (= r_24 r_23)))
+(check-sat)
+(get-value (n_0))
+(get-value (n_1))
+(get-value (n_2))
+(get-value (n_3))
+(get-value (n_4))
+(get-value (n_5))
+(get-value (n_6))
+(get-value (n_7))
+(get-value (n_8))
+(get-value (n_9))
+(get-value (n_10))
+(get-value (n_11))
+(get-value (n_12))
+(get-value (n_13))
+(get-value (n_14))
+(get-value (n_15))
+(get-value (n_16))
+(get-value (n_17))
+(get-value (n_18))
+(get-value (n_19))
+(get-value (n_20))
+(get-value (n_21))
+(get-value (n_22))
+(get-value (n_23))
+(get-value (n_24))
