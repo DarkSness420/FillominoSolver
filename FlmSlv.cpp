@@ -18,7 +18,7 @@ vector<tuple<int, int, int>> fixedCells; //For sat solver
 
 bool depthExperiment = true;
 
-bool showIntermediateProcess = true;
+bool showIntermediateProcess = false;
 int Height = 10;
 int Width = 10;
 const int DIRECTIONS[4][2] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}}; // Up, Down, Left, Right
@@ -461,7 +461,7 @@ int checkSingleExitGroups(pair<int, int> &exitCell) {
     findAndStoreGroups();
     for (const auto& group : globalGroups) {
         int exitCount = 0;
-        exitCell = {-1, -1};
+        pair<int, int> tempExit = {-1, -1};
 
         // Loop through each cell in the group to count exits
         for (const auto& cell : group.cells) {
@@ -476,19 +476,20 @@ int checkSingleExitGroups(pair<int, int> &exitCell) {
                 //check if cell is valid
                 if (isValid(newRow, newCol) && board[newRow][newCol] == 0 && exitCell == make_pair(-1, -1)) {
                     exitCount++;
-                    exitCell = {newRow, newCol};
+                    tempExit = {newRow, newCol};
                     if(exitCount > 1){
                         break;
                     }
                 }
-                if(exitCount > 1){
+            }
+            if(exitCount > 1){
                     break;
-                }
             }
         }
 
         //exactly one exit found
         if (exitCount == 1 && group.cells.size() < group.number) {
+            exitCell = tempExit;
             return group.number;
         }
     }
@@ -569,7 +570,8 @@ bool readBoardFromFile(const string& filename) {
     return true;
 }
 
-void KeepCheckingSingleExits(){
+bool KeepCheckingSingleExits(){
+    bool changed = false;
     pair<int, int> exitCell = {-1,-1};
     int groupNumber = -1;
 
@@ -580,6 +582,7 @@ void KeepCheckingSingleExits(){
             if (!fillCell(exitCell.first, exitCell.second, groupNumber)){
                 cout << "error with filling the cell";
             }
+            changed = true;
             if(showIntermediateProcess){
                 cout << "Filled cell: " << "(" << exitCell.first << "," << exitCell.second << ")" << " with " << groupNumber <<endl;
                 displayBoard();
@@ -589,9 +592,11 @@ void KeepCheckingSingleExits(){
             break;
         }
     }
+    return changed;
 }
 
-void KeepCheckingEmptyReachableCells(){
+bool KeepCheckingEmptyReachableCells(){
+    bool changed = false;
     pair<int, int> whichCell = {-1,-1};
     int groupNumber = -1;
     while(true){
@@ -601,6 +606,7 @@ void KeepCheckingEmptyReachableCells(){
             if (!fillCell(whichCell.first, whichCell.second, groupNumber)){
                 cout << "error with filling the cell";
             }
+            changed = true;
             if(showIntermediateProcess){
                 cout << "Filled cell: " << "(" << whichCell.first << "," << whichCell.second << ")" << " with " << groupNumber <<endl;
                 displayBoard();
@@ -610,6 +616,7 @@ void KeepCheckingEmptyReachableCells(){
             break;
         }
     }
+    return changed;
 }
 
 bool canGroupBeCompleted(Group& group) {
@@ -764,7 +771,8 @@ int findDefinitiveNumber(pair<int, int> &defCell) {
     return -1;
 }
 
-void keepFillingDefinitiveNumbers(){
+bool keepFillingDefinitiveNumbers(){
+    bool changed = false;
     pair<int, int> defCell;
     int defNumber;
     while (true)
@@ -778,23 +786,48 @@ void keepFillingDefinitiveNumbers(){
         if (!fillCell(defCell.first, defCell.second, defNumber)) {
             cout << "Error filling cell (" << defCell.first << ", " << defCell.second << ") with " << defNumber << endl;
         }
+        changed = true;
         
         if (showIntermediateProcess) {
-            // cout << "Filled cell: (" << defCell.first << ", " << defCell.second << ") with " << defNumber << endl;
-            // displayBoard();
+            //cout << "Filled cell: (" << defCell.first << ", " << defCell.second << ") with " << defNumber << endl;
+            //displayBoard();
         }
     }
-    
+    return changed;
 }
 
+void applyAllDeterministicFilling() {
+    bool overallChanged;
 
+    do {
+        overallChanged = false;
+        bool easyStratsChanged;
+        do {
+            easyStratsChanged = false;
+            if (KeepCheckingSingleExits()){
+                easyStratsChanged = true;
+            }
+            if (KeepCheckingEmptyReachableCells()){
+                easyStratsChanged = true;
+            }
+            if (easyStratsChanged){
+                overallChanged = true;
+            }
+        } while (easyStratsChanged);
+
+        if (keepFillingDefinitiveNumbers()) {
+            overallChanged = true;
+        }
+
+    } while (overallChanged);
+}
 
 bool solveWithBacktracking(int currentDepth = 0) {
     if ((showDepth || depthExperiment) && currentDepth > maxDepth) {
         maxDepth = currentDepth;
     }
 
-    keepFillingDefinitiveNumbers();
+    applyAllDeterministicFilling();
 
     if (existsOverfilledGroup() || !canAllGroupsBeCompleted()) {
         return false;
@@ -961,8 +994,6 @@ void txtFilesToSMT() {
     }
 }
 
-
-
 void experiment() {
     string basePath = "C:\\Users\\Ryan\\Desktop\\baronPuzzles\\";
     string outputCSV = basePath + "results.csv";
@@ -1007,6 +1038,7 @@ void experiment() {
             cout << "Solved " << filename << ", maxDepth: " << maxDepth << endl;
         } else {
             cout << "Could not solve " << filename << endl;
+            exit(1);
         }
 
         csvFile << height << "," << width << "," << boardnum << ","
